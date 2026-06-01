@@ -489,7 +489,49 @@
     <p class="tip">Golden Jackets across France</p>
     <div class="map-container">
       <!-- Connection lines between pins -->
-      <svg viewBox="0 0 600 600" style="width:100%;max-width:700px;height:auto;display:block;margin:0 auto;" id="france-map" xmlns="http://www.w3.org/2000/svg"><text x="300" y="300" text-anchor="middle" fill="#FFD700" font-size="20">Map coming soon</text></svg>
+      <svg viewBox="0 0 600 600" style="width:100%;max-width:700px;height:auto;display:block;margin:0 auto;" id="france-map" xmlns="http://www.w3.org/2000/svg">
+  <!-- Île-de-France (Paris) - HIGHLIGHTED -->
+  <path data-state="IDF" class="active" d="M310,235 L325,230 L335,238 L332,252 L320,255 L308,248 L310,235 Z"/>
+  <!-- Hauts-de-France -->
+  <path data-state="HDF" d="M280,120 L320,105 L365,110 L375,135 L360,165 L335,175 L310,180 L285,170 L270,150 L280,120 Z"/>
+  <!-- Normandie -->
+  <path data-state="NOR" d="M170,150 L220,135 L270,150 L285,170 L280,195 L250,210 L210,205 L175,195 L160,175 L170,150 Z"/>
+  <!-- Bretagne -->
+  <path data-state="BRE" d="M80,195 L130,180 L170,190 L175,195 L180,220 L165,245 L130,255 L95,245 L70,225 L80,195 Z"/>
+  <!-- Pays de la Loire -->
+  <path data-state="PDL" d="M130,255 L165,245 L180,220 L210,225 L240,240 L245,270 L230,295 L195,300 L160,290 L135,275 L130,255 Z"/>
+  <!-- Centre-Val de Loire -->
+  <path data-state="CVL" d="M240,240 L280,225 L310,235 L308,248 L320,255 L325,280 L310,310 L275,315 L250,300 L245,270 L240,240 Z"/>
+  <!-- Grand Est -->
+  <path data-state="GES" d="M375,135 L420,120 L470,140 L480,180 L470,220 L440,245 L400,250 L370,235 L360,200 L360,165 L375,135 Z"/>
+  <!-- Bourgogne-Franche-Comté -->
+  <path data-state="BFC" d="M370,235 L400,250 L440,245 L450,280 L440,320 L410,340 L375,335 L350,310 L340,280 L350,255 L370,235 Z"/>
+  <!-- Nouvelle-Aquitaine -->
+  <path data-state="NAQ" d="M160,290 L195,300 L230,295 L250,300 L275,315 L280,350 L270,390 L250,420 L220,440 L185,430 L155,400 L140,360 L145,320 L160,290 Z"/>
+  <!-- Auvergne-Rhône-Alpes -->
+  <path data-state="ARA" d="M350,310 L375,335 L410,340 L430,370 L440,400 L420,430 L385,440 L350,420 L320,390 L310,355 L320,330 L350,310 Z"/>
+  <!-- Occitanie -->
+  <path data-state="OCC" d="M220,440 L250,420 L270,390 L280,350 L310,355 L320,390 L350,420 L340,455 L310,480 L270,490 L235,480 L210,465 L220,440 Z"/>
+  <!-- Provence-Alpes-Côte d'Azur -->
+  <path data-state="PAC" d="M385,440 L420,430 L460,440 L490,460 L485,490 L455,505 L420,500 L390,485 L370,465 L385,440 Z"/>
+  <!-- Corse -->
+  <path data-state="COR" d="M520,450 L530,445 L540,455 L542,480 L538,510 L530,525 L520,520 L515,495 L518,470 L520,450 Z"/>
+  <!-- Region labels -->
+  <text x="320" y="245" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">IDF</text>
+  <text x="325" y="145" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">HDF</text>
+  <text x="225" y="175" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">NOR</text>
+  <text x="130" y="220" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">BRE</text>
+  <text x="190" y="265" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">PDL</text>
+  <text x="285" y="275" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">CVL</text>
+  <text x="420" y="190" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">GES</text>
+  <text x="400" y="290" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">BFC</text>
+  <text x="210" y="365" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">NAQ</text>
+  <text x="375" y="380" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">ARA</text>
+  <text x="280" y="445" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">OCC</text>
+  <text x="440" y="470" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">PAC</text>
+  <text x="530" y="485" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="700" style="pointer-events:none;">COR</text>
+</svg>
+
       <div class="map-pin" style="top:64%;left:40%" onclick="filterByState('TS')"><span class="pin-icon">📍</span><span class="pin-count gold-count">1</span></div>
     </div>
     
