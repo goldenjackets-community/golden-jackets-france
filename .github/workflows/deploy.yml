@@ -17,7 +17,8 @@ jobs:
       - name: Sync to S3
         run: |
           aws s3 sync . s3://goldenjackets.fr/ \
-            --exclude ".git/*" --exclude ".github/*" --exclude ".gitignore" --exclude "README.md"
+            --exclude ".git/*" --exclude ".github/*" --exclude ".gitignore" --exclude "README.md" --exclude "BACKLOG.md" --exclude ".kiro/*" \
+            --delete
   invalidate:
     needs: [deploy]
     runs-on: ubuntu-latest
